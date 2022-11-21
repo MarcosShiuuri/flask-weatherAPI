@@ -1,1 +1,1 @@
-# flask_weatherAPI
+# Python web app using Flask and OpenWeatherAPI
