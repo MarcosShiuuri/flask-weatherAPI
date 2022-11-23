@@ -3,4 +3,8 @@
     <label>Input the name of the city:</label>
     <input type="text" id="city_id" name="city_name" maxlength="20">
 </form>
-<p>{{url}}</p>
+
+<h4>Showing results for: {{data.name}}</h4>
+<p>Description: {{data.desc.capitalize()}}</p>
+<p>Temperature: {{data.temp}} C° - Humidity: {{data.humi}}%</p>
+<p>Min: {{data.temp_min}} C° / Max: {{data.temp_max}} C°</p>
