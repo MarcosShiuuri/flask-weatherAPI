@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(100, 187, 83);
+    color:rgb(0, 0, 0);
+    font-family: Times;
+    margin-left: 25px;
+}
+
+#form h1 {
+    font-family: Verdana;
+    font-size: 36px;
+}
+
+#results h4 {
+    font-family: Verdana;
+}
+
+#results p{
+    font-family: Verdana;
+}
