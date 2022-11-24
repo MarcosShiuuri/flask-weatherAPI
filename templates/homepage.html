@@ -1,10 +1,26 @@
-<h1>HOMEPAGE</h1>
-<form action='/' method='POST'>
-    <label>Input the name of the city:</label>
-    <input type="text" id="city_id" name="city_name" maxlength="20">
-</form>
-
-<h4>Showing results for: {{data.name}}</h4>
-<p>Description: {{data.desc.capitalize()}}</p>
-<p>Temperature: {{data.temp}} C° - Humidity: {{data.humi}}%</p>
-<p>Min: {{data.temp_min}} C° / Max: {{data.temp_max}} C°</p>
+<!DOCTYPE html>
+<html> 
+	<head>
+    	<title>Flask OpenWeatherAPI</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	</head>
+	<body>
+        <div id="form">
+            <h1>WEATHER WEB APP</h1>
+            <form action='/' method='POST'>
+            <label id="input"><b>INPUT THE CITY:</b></label>
+            <br>
+            <input type="text" id="city_id" name="city_name" maxlength="20" placeholder="City" required>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+        <br>
+        <div id="results">
+            <h4><b>SHOWING RESULTS FOR:</b> {{data.name.capitalize()}}</h4>
+            <p><b>CURRENT WEATHER:</b> {{data.desc.capitalize()}}</p>
+            <p><b>TEMPERATURE:</b> {{data.temp}} C° / {{data.temp_f}} F°</p>
+            <p><b>HUMIDITY:</b> {{data.humi}}%</p>
+        </div>
+	</body>
+</html>
