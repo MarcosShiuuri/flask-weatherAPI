@@ -16,7 +16,6 @@ def homepage():
     data = {
         "name": ajs['name'],
         "desc": ajs['weather'][0]['description'],
-        #'icon': ajs['weather'][0]['icon'], usar quando descobrir como mostrar imagens
         "temp": int(ajs['main']['temp']),
         "temp_f": int(ajs['main']['temp']*1.8+32),
         "humi": ajs['main']['humidity']
