@@ -1,7 +1,7 @@
 Python web app using Flask and OpenWeatherAPI
 This project displays info about the weather of a chosen city.
 
-The goal was to improve my knowledge of APIs using Flask as the backend and OpenWeatherAPI from [openweathermap.org](https://openweathermap.org) as the API.
+The goal was to improve my knowledge of APIs usage, with Flask as the backend and OpenWeatherAPI from [openweathermap.org](https://openweathermap.org).
 
 Also, it uses basic HTML5 and CSS3 as the frontend, since the focus was the backend.
 
