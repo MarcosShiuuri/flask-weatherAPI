@@ -1,4 +1,4 @@
-from flask import Flask, request as rq, render_template as rt
+from flask import Flask, request, render_template
 import requests
 
 api_id = '0f2a2229a393a9b392f70d7f8ddb227e'
@@ -6,8 +6,8 @@ api_id = '0f2a2229a393a9b392f70d7f8ddb227e'
 app = Flask(__name__)
 @app.route('/', methods=['POST', 'GET'])
 def homepage():
-    if rq.method == 'POST':
-        city = rq.form.get('city_name')
+    if request.method == 'POST':
+        city = request.form.get('city_name')
     else: city = 'Brasília'
     api_url = 'https://api.openweathermap.org/data/2.5/weather?'
     api_params = {'q':city, 'appid':api_id, 'units':'metric', 'lang':'en_us'}
@@ -20,4 +20,7 @@ def homepage():
         "temp_f": int(ajs['main']['temp']*1.8+32),
         "humi": ajs['main']['humidity']
     }
-    return rt('homepage.html', data=data)
+    return render_template('homepage.html', data=data)
+
+if __name__ == '__main__':
+    app.run()
