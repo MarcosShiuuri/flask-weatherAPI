@@ -3,7 +3,7 @@ This project displays info about the weather of a chosen city.
 
 The goal was to improve my knowledge of APIs usage, with Flask as the backend and OpenWeatherAPI from [openweathermap.org](https://openweathermap.org).
 
-Also, it uses basic HTML5 and CSS3 as the frontend, since the focus was the backend.
+Also, it uses basic HTML5 and CSS3 as the frontend since the focus was the backend.
 
 VERSION OF WHAT WAS USED:
 	Python - v3.11.0
